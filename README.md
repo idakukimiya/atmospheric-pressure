@@ -1,12 +1,12 @@
 # atmospheric-pressure
 
-Deployed URL: 
+Deployed URL:
 
-GitHub URL: 
+GitHub URL:
 
 ## Description
 
-The goal of this project is creating a weather dashboard the pull data from another application's API. With the ability to  store past search history. 
+The goal of this project is creating a weather dashboard the pull data from another application's API. With the ability to  store past search history.
 
 ## Acceptance Criteria
 
@@ -19,6 +19,4 @@ The goal of this project is creating a weather dashboard the pull data from anot
 - view future weather conditons for city search > presented with a 5-day forecast that display the date, an icon representation of weather conditions, the temperature, the wind spreed, & the humidty
 - click on city in the search history > again presented with current and future conditions for that city
 
-### Photo of Mockup
-
-
+### Photo of Mock-up
