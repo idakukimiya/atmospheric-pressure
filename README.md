@@ -1,8 +1,8 @@
 # atmospheric-pressure
 
-Deployed URL:
+Deployed URL: https://idakukimiya.github.io/atmospheric-pressure/
 
-GitHub URL:
+GitHub URL: https://github.com/idakukimiya/atmospheric-pressure
 
 ## Description
 
