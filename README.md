@@ -20,3 +20,6 @@ The goal of this project is creating a weather dashboard the pull data from anot
 - click on city in the search history > again presented with current and future conditions for that city
 
 ### Photo of Mock-up
+![alt text](assets/image/overall.png)
+
+![alt text](assets/image/history.png)
