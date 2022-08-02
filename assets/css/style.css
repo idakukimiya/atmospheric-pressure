@@ -1,5 +1,7 @@
 h1 {
-	background-color: darkgrey;
+	background-color: rgb(39, 70, 128);
+    font-size: 50px;
+    color:aliceblue;
 	text-align: center;
 }
 label {
@@ -12,7 +14,7 @@ label {
 }
 .colOne {
 	background-color: white;
-	/* darkkhaki */
+	
 }
 .colTwo {
 	background-color: rgb(255, 255, 255);
@@ -22,7 +24,7 @@ label {
 	margin-bottom: 5px;
 }
 .green{
-  background-color: lightgreen;
+  background-color: rgb(144, 240, 144);
 }
 .yellow{
   background-color: yellow;
