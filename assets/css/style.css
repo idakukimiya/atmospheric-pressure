@@ -1,56 +1,44 @@
-h1 {
-	background-color: rgb(39, 70, 128);
-    font-size: 50px;
-    color:aliceblue;
-	text-align: center;
-}
-label {
-	margin-top: 10px;
-	font-weight: bold;
-	font-size: 20px;
-}
-.card {
-	margin: 10px;
-}
-.colOne {
-	background-color: lightgray;
+* {
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: 'Yellowtail', cursive;
 	
-}
-.colTwo {
-	background-color: lightgray;
-}
-.histBtnRow {
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-.green{
-  background-color: rgb(168, 248, 168);
-}
-.yellow{
-  background-color: yellow;
-}
-.orange{
-  background-color: orange;
-}
-.red{
-  background-color: red;
-}
-.purple{
-  background-color: purple;
-}
-.icons {
-	height: 70px;
-	width: 70px;
-}
-.cardTodayDate {
-	font-size: 20px;
-    background-color: lightgoldenrodyellow;
-}
-.cardTodayCityName {
-    background-color: azure;
-}
-
-.cardBodyToday {
-    background-color: azure;
-}
-
+  }
+  
+  .forecast {
+	font-size: 0.9em;
+  }
+  
+  .topnav {
+	  color: #e9e9e9;
+	  text-align: center;
+	  font-size: 17px;
+	  background-color: #3f3f3f;
+	  padding: 14px 16px;
+  }
+  
+  .footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #e9e9e9;
+	color: #000000;
+	text-align: center;
+  }
+  
+  .city-name {
+	font-weight: bold;
+	font-size: x-large;
+  }
+  
+  p.current,
+  .city-name {
+	color: #000000;
+  }
+  
+  p {
+	color: white;
+  }
