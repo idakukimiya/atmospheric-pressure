@@ -10,7 +10,7 @@
 
 [Screenshot](#screenshot)
 
-[Links to Portfolio](#links-to-portfolio)
+[Links to Project](#links-to-project)
 
 [Questions](#questions)
 
@@ -46,7 +46,7 @@ THEN I am again presented with current and future conditions for that city
 
 ![screenshot of project](#)
 
-## Links to Portfolio
+## Links to Project
 
 [Deployed URL](https://idakukimiya.github.io/atmospheric-pressure/)
 
