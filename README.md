@@ -44,8 +44,6 @@ THEN I am again presented with current and future conditions for that city
 
 ![screenshot of project](#)
 
-![screenshot of project](#)
-
 ## Links to Project
 
 [Deployed URL](https://idakukimiya.github.io/atmospheric-pressure/)
