@@ -42,7 +42,7 @@ THEN I am again presented with current and future conditions for that city
 
 ## Screenshot
 
-![screenshot of project](#)
+![screenshot of project](./assets/image/Picture2.png)
 
 ## Links to Project
 

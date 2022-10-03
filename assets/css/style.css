@@ -1,11 +1,11 @@
 .custom-gradient {
-    background: rgb(141,134,255);
-    background: linear-gradient(90deg, rgba(141,134,255,1) 0%, rgba(54,47,173,1) 50%, rgba(7,0,121,1) 99%, rgba(7,0,117,1) 100%); 
+    background: rgb(17, 61, 16);
+    background: linear-gradient(90deg, rgb(134, 217, 255) 0%, rgb(47, 173, 162) 50%, rgb(198, 228, 31) 99%, rgb(117, 47, 0) 100%); 
 }
 
 .custom-gradient-card {
-    background: rgb(216,156,251);
-    background: linear-gradient(180deg, rgba(216,156,251,1) 0%, rgba(158,59,210,1) 50%, rgba(144,0,176,1) 100%);
+    background: rgb(17, 61, 16);
+    background: linear-gradient(180deg, rgb(134, 217, 255) 0%, rgb(47, 173, 162) 50%, rgb(198, 228, 31) 99%, rgb(117, 47, 0) 100%);
 }
 
 .custom-search-results {

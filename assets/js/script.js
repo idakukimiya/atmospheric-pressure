@@ -9,7 +9,7 @@ var apiGeoURL = 'https://api.openweathermap.org/geo/1.0/direct?q=';
 var apiImgURL = 'https://openweathermap.org/img/wn/'
 var apiExcludeQuery = '&exclude=minutely,hourly';
 var apiUnits = '&units=imperial'
-var apiKey = '&appid=4f6a3fea6209de90cad619a8c1893016';
+var apiKey = '&appid=2fc846310bbb56d4153664677c1ecc04';
 var today = moment().format('l');
 
 // Handle submitting the form once a proper city is entered
