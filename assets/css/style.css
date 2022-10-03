@@ -1,44 +1,17 @@
-* {
-	box-sizing: border-box;
-  }
-  
-  body {
-	font-family: 'Yellowtail', cursive;
-	
-  }
-  
-  .forecast {
-	font-size: 0.9em;
-  }
-  
-  .topnav {
-	  color: #e9e9e9;
-	  text-align: center;
-	  font-size: 17px;
-	  background-color: #3f3f3f;
-	  padding: 14px 16px;
-  }
-  
-  .footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: #e9e9e9;
-	color: #000000;
-	text-align: center;
-  }
-  
-  .city-name {
-	font-weight: bold;
-	font-size: x-large;
-  }
-  
-  p.current,
-  .city-name {
-	color: #000000;
-  }
-  
-  p {
-	color: white;
-  }
+.custom-gradient {
+    background: rgb(141,134,255);
+    background: linear-gradient(90deg, rgba(141,134,255,1) 0%, rgba(54,47,173,1) 50%, rgba(7,0,121,1) 99%, rgba(7,0,117,1) 100%); 
+}
+
+.custom-gradient-card {
+    background: rgb(216,156,251);
+    background: linear-gradient(180deg, rgba(216,156,251,1) 0%, rgba(158,59,210,1) 50%, rgba(144,0,176,1) 100%);
+}
+
+.custom-search-results {
+    background-color: lightgrey;
+}
+
+.custom-bg-orange {
+    background-color: orange;
+}
