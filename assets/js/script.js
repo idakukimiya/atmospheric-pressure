@@ -16,7 +16,7 @@ const today = moment().format('l');
 searchForm.on('submit', handleSubmit);
 function handleSubmit (event) {
     event.preventDefault();
-    const searchInput = $('#search-input').val();
+    const searchInput= $('#search-input').val();
     if (!searchInput) {
         searchText.text('Need to enter city!');
         searchText.css('color', 'red');
@@ -42,9 +42,9 @@ function searchCity(searchInput) {
                 searchText.css('color', 'red');
                 return;
             }
-            var lat = 'lat=' + data[0].lat;
-            var lon = 'lon=' + data[0].lon;
-            var cityQuery = lat + '&' + lon;
+            const lat = 'lat=' + data[0].lat;
+            const lon = 'lon=' + data[0].lon;
+            const cityQuery = lat + '&' + lon;
             renderSearchResults(cityQuery, capitalize(searchInput));
         })
 }
@@ -90,8 +90,8 @@ function renderSearchResults(cityQuery, cityName) {
             
 
             for (let i = 1; i < 6; i++) {
-                var currentDay = moment.unix(data.daily[i].dt).format('l');
-                var currentIconURL = apiImgURL + data.daily[i].weather[0].icon + '@4x.png';
+                const currentDay = moment.unix(data.daily[i].dt).format('l');
+                const currentIconURL = apiImgURL + data.daily[i].weather[0].icon + '@4x.png';
                 forecastCards.append(
                     '<div class="col card p-2 m-2 text-white custom-gradient-card">' +
                       '<h4>' + currentDay + '</h4>' +
