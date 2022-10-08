@@ -38,8 +38,8 @@ function searchCity(searchInput) {
         })
         .then(function (data) {
             if (!data[0]) {
-                searchTextEl.text('Need to enter city name!');
-                searchTextEl.css('color', 'red');
+                searchText.text('Need to enter city name!');
+                searchText.css('color', 'red');
                 return;
             }
             var lat = 'lat=' + data[0].lat;
