@@ -1,22 +1,22 @@
-var searchForm = $('#search-form');
-var searchText = $('#form-text');
-var searchHistory = $('#search-history');
-var searchResult = $('#search-result');
-var forecastCards = $('#forecast-cards');
+const searchForm = $('#search-form');
+const searchText = $('#form-text');
+const searchHistory = $('#search-history');
+const searchResult = $('#search-result');
+const forecastCards = $('#forecast-cards');
 
-var apiURL = 'https://api.openweathermap.org/data/2.5/onecall?';
-var apiGeoURL = 'https://api.openweathermap.org/geo/1.0/direct?q=';
-var apiImgURL = 'https://openweathermap.org/img/wn/'
-var apiExcludeQuery = '&exclude=minutely,hourly';
-var apiUnts = '&units=imperial'
-var apiKey = '52582e6635792302e602f73ae0392fd7';
-var today = moment().format('l');
+const apiURL = 'https://api.openweathermap.org/data/2.5/onecall?';
+const apiGeoURL = 'https://api.openweathermap.org/geo/1.0/direct?q=';
+const apiImgURL = 'https://openweathermap.org/img/wn/'
+const apiExcludeQuery = '&exclude=minutely,hourly';
+const apiUnts = '&units=imperial'
+const apiKey = '&appid=52582e6635792302e602f73ae0392fd7';
+const today = moment().format('l');
 
 
 searchForm.on('submit', handleSubmit);
 function handleSubmit (event) {
     event.preventDefault();
-    var searchInput = $('#search-input').val();
+    const searchInput = $('#search-input').val();
     if (!searchInput) {
         searchText.text('Need to enter city!');
         searchText.css('color', 'red');
@@ -29,7 +29,7 @@ function handleSubmit (event) {
 function searchCity(searchInput) {
    
     searchInput = searchInput.toLowerCase().trim();
-    var geoURL = apiGeoURL + searchInput + '&limit=1' + apiKey;
+    const geoURL = apiGeoURL + searchInput + '&limit=1' + apiKey;
 
 
     fetch(geoURL)
@@ -58,7 +58,7 @@ function renderSearchResults(cityQuery, cityName) {
     localStorage.setItem(cityName, cityQuery);
 
   
-    var localQueryURL = apiURL + cityQuery + apiUnts + apiExcludeQuery + apiKey;
+    const localQueryURL = apiURL + cityQuery + apiUnts + apiExcludeQuery + apiKey;
     
     fetch(localQueryURL)
         .then(function (response) {
@@ -69,16 +69,16 @@ function renderSearchResults(cityQuery, cityName) {
             renderSearchHistory();
             
           
-            var todayWeatherList = ['Temp: ' + data.current.temp + ' °F', 'Wind Speed: '+ data.current.wind_speed + ' MPH', 'Humidity: ' + data.current.humidity + '%'];
-            var weatherIconURL = apiImgURL + data.current.weather[0].icon + '.png';
-            var weatherIconImg = '<img src="'+ weatherIconURL +'" alt="'+ data.current.weather[0].description +'">'
-            searchResultEl.append('<h3 class="text-white fw-bolder mb-3">'+ cityName + ' (' + today + ') ' + weatherIconImg + '</h3>');
+            const todayWeatherList = ['Temp: ' + data.current.temp + ' °F', 'Wind Speed: '+ data.current.wind_speed + ' MPH', 'Humidity: ' + data.current.humidity + '%'];
+            const weatherIconURL = apiImgURL + data.current.weather[0].icon + '.png';
+            const weatherIconImg = '<img src="'+ weatherIconURL +'" alt="'+ data.current.weather[0].description +'">'
+            searchResult.append('<h3 class="text-white fw-bolder mb-3">'+ cityName + ' (' + today + ') ' + weatherIconImg + '</h3>');
             for (let i = 0; i < todayWeatherList.length; i++) {
                 searchResult.append('<p class="text-white ms-3">'+ todayWeatherList[i] +'</p>');
             }
             
-            var uvColor = 'bg-success'; 
-            var uvi = data.current.uvi;
+            const uvColor = 'bg-success'; 
+            const uvi = data.current.uvi;
             if (uvi >= 8) {
                 uvColor = 'bg-danger';
             } else if (uvi >= 6) {
@@ -114,7 +114,7 @@ function removePreviousSearch() {
 
 searchHistory.on('click', '.btn', handleSearchHistory)
 function handleSearchHistory(event) {
-    var searchHistoryItm = event.target.innerHTML;
+    const searchHistoryItm = event.target.innerHTML;
     renderSearchResults(localStorage.getItem(searchHistoryItm),searchHistoryItm);
 }
 
