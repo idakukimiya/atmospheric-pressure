@@ -4,18 +4,15 @@
 
 .custom-gradient {
     background: rgb(17, 61, 16);
-    background: linear-gradient(90deg, rgb(134, 217, 255) 0%, rgb(47, 173, 162) 50%, rgb(198, 228, 31) 99%, rgb(117, 47, 0) 100%); 
+    background: linear-gradient(90deg, rgb(134, 217, 255) 0%, rgb(47, 173, 162) 50%, rgb(198, 228, 31) 99%); 
 }
 
 .custom-gradient-card {
     background: rgb(17, 61, 16);
-    background: linear-gradient(180deg, rgb(134, 217, 255) 0%, rgb(47, 173, 162) 50%, rgb(198, 228, 31) 99%, rgb(117, 47, 0) 100%);
+    background: linear-gradient(180deg, rgb(134, 217, 255) 0%, rgb(47, 173, 162) 50%, rgb(198, 228, 31) 99%);
 }
 
 .custom-search-results {
     background-color: lightgrey;
 }
 
-.custom-bg-orange {
-    background-color: orange;
-}
